@@ -11,8 +11,7 @@
     #contact,
     #projects {
         height: fit-content;
-    }
-    
+    } 
     
 }
 
@@ -20,12 +19,6 @@
 
 /* Large devices (large desktops, less than 1200px) */
 @media screen and (max-width: 1200px) {
-    #desktop-nav {
-        display: none;
-    }
-    #hamburger-nav {
-        display: flex; 
-    }
     #experience,
     .experience-details-container {
         margin-top: 2rem;
@@ -54,7 +47,37 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    #desktop-nav .logo, .nav-links a {
+        font-size: 1.2rem;
+    }
+    .nav-links {
+        gap: 0.67em;
+    }
+
+    #projects .about-containers {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #projects .details-container {
+        width: 9rem;
+    }
+   
+}
+
+@media screen and (max-width: 576px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex; 
+    }
+   
     #contact,
     footer {
         height: 40vh;
@@ -75,8 +98,12 @@
     .btn-container {
         flex-wrap: wrap;
     }
+    .contact-info-upper-container {
+        gap: 1rem;
+    }
     .contact-info-container {
         margin: 0;
+        font-size: 1rem;
     }
     .contact-info-container p,
     .nav-links li a {

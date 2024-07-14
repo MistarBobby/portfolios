@@ -18,7 +18,6 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Project</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -37,7 +36,6 @@
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
@@ -58,16 +56,19 @@
             </div>
             <div id="socials-container">
                 <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" 
-                ondblclick="location.href='https://linkedin.com'">
+                onclick="window.open('https://www.linkedin.com/in/mistarbobby/', '_blank')">
+
+                <!-- <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" 
+                ondblclick="location.href='https://linkedin.com'"> -->
 
                 <img src="./assets/github.png" alt="My github Profile" class="icon" 
-                ondblclick="location.href='https://linkedin.com'">
+                onclick="window.open('https://github.com/MistarBobby', '_blank')">
             </div> 
         </div>
      </section>
 
      <!-- ABOUT SECTION-->
-      <section id="about">
+     <section id="about">
         <p class="section_text_p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
@@ -110,8 +111,9 @@
         onclick="location.href='./#experience'">
       </section>
 
-      <!-- EXPERIENCE SECTION -->
-      <section id="experience">
+
+     <!-- EXPERIENCE SECTION -->
+     <section id="experience">
         <p class="section_text_p1">Explore My</p>
         <h1 class="title">Experience</h1>
         <div class="experience-details-container">
@@ -181,6 +183,7 @@
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
         onclick="location.href='./#projects'">
       </section>
+
       <!-- PROJECT SECTION -->
       <section id="projects">
         <p class="section_text_p1">Browse My Recent</p>
@@ -188,26 +191,6 @@
         <div class="experience-details-container">
             <div class="about-containers">
                 <!-- Project 1 -->
-                <!-- <div class="details-container color-container">
-                    <div class="article-container">
-                        <img 
-                        src="./assets/project-1.png" 
-                        alt="Project-img" 
-                        class="project-img"
-                        >
-                    </div>
-                    <h2 class="experience-sub-title project-title">Coming Soon</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://github.com/MistarBobby'">Github
-                        </button>
-
-                        <button class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://github.com/'">Live Demo
-                        </button>
-                    </div>
-                </div> -->
-                
 
                 <!-- Project 2 -->
                 <div class="details-container color-container">
@@ -242,11 +225,11 @@
                     <h2 class="experience-sub-title project-title">Barber Shop</h2>
                     <div class="btn-container">
                         <button class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://github.com/MistarBobby'">Github
+                        onclick="location.href='https://github.com/MistarBobby/Barber'">Github
                         </button> <!-- https://github.com/MistarBobby/Barber -->
 
                         <button class="btn btn-color-2 project-btn" 
-                        onclick="location.href='https://effortless-hotteok-6a6dcc.netlify.app/'">Live Demo
+                        onclick="location.href='https://maibarber.netlify.app/'">Live Demo
                         </button>
                     </div>
                 </div>
@@ -257,6 +240,7 @@
         onclick="location.href='./#contact'">
       </section>
 
+      <!-- CONTACT SECTION -->
       <section id="contact">
         <p class="section_text_p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
@@ -286,13 +270,14 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Project</a></li>
-                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
         <p>Copyright &#169; 2024  Bobby, All Right Reserved</p>
       </footer>
+
+     
 
 
     <script src="script.js"></script>
